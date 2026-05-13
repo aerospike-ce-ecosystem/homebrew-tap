@@ -5,21 +5,21 @@
 class Ackoctl < Formula
   desc "CLI for aerospike-cluster-manager"
   homepage "https://github.com/aerospike-ce-ecosystem/ackoctl"
-  version "0.1.3"
+  version "0.1.4"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aerospike-ce-ecosystem/ackoctl/releases/download/v0.1.3/ackoctl_0.1.3_darwin_amd64.tar.gz"
-      sha256 "23e9bc872294614da7121fb9119b9ac3a277f0cd767a7759c4c7b937871f70ae"
+      url "https://github.com/aerospike-ce-ecosystem/ackoctl/releases/download/v0.1.4/ackoctl_0.1.4_darwin_amd64.tar.gz"
+      sha256 "f93c9d088673538a78ab679ef9eb5c4fafec3e36faee93ee72dd7deb83bc188f"
 
       define_method(:install) do
         bin.install "ackoctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aerospike-ce-ecosystem/ackoctl/releases/download/v0.1.3/ackoctl_0.1.3_darwin_arm64.tar.gz"
-      sha256 "a18d9860b4956c10b18c7fa1b06525b8351c7491f28b746915ff1da31f86db4b"
+      url "https://github.com/aerospike-ce-ecosystem/ackoctl/releases/download/v0.1.4/ackoctl_0.1.4_darwin_arm64.tar.gz"
+      sha256 "5a783fcd93ed0dbada7aa34a386086975885c1a8a2b9c45556f04cb67b409121"
 
       define_method(:install) do
         bin.install "ackoctl"
@@ -29,15 +29,15 @@ class Ackoctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aerospike-ce-ecosystem/ackoctl/releases/download/v0.1.3/ackoctl_0.1.3_linux_amd64.tar.gz"
-      sha256 "7c0e1d6e168b4e45d5b63265b3cb632ffcd4d222d13ff9b884bec71d19080ab6"
+      url "https://github.com/aerospike-ce-ecosystem/ackoctl/releases/download/v0.1.4/ackoctl_0.1.4_linux_amd64.tar.gz"
+      sha256 "039a40a63d4ae1c9e8e1f4278ed05bb915bddf218228b2314e0b2a50f67594d9"
       define_method(:install) do
         bin.install "ackoctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aerospike-ce-ecosystem/ackoctl/releases/download/v0.1.3/ackoctl_0.1.3_linux_arm64.tar.gz"
-      sha256 "d6fce211698829abec6bb3465c2a007838aea79ab735d45f4ca30c7384192a69"
+      url "https://github.com/aerospike-ce-ecosystem/ackoctl/releases/download/v0.1.4/ackoctl_0.1.4_linux_arm64.tar.gz"
+      sha256 "50480808d1396c9b36c90f1ece07a5de12ab6cb39e432d196e407e3de639dbff"
       define_method(:install) do
         bin.install "ackoctl"
       end
